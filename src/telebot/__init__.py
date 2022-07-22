@@ -40,3 +40,7 @@ def handle(event: Event, scene: str = None):
         return callback
 
     return deco
+
+
+def enter(scene: str = None):
+    pass

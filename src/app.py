@@ -6,7 +6,7 @@ import tasks
 from assets import logger
 from telebot import run
 
-logging.basicConfig(level=20)
+logging.basicConfig(level=30)
 
 handlers.setup()
 tasks.setup()
