@@ -2,10 +2,9 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY Pipfile.lock Pipfile.lock
-RUN pip install pipenv
-RUN pipenv install
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
-COPY . .
+COPY src .
 
-CMD python src/app.py
+CMD python app.py
