@@ -1,1 +1,1 @@
-from .main import start, text
+from .main import start, text, photo

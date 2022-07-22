@@ -1,10 +1,11 @@
-from telebot import handle, events, send, filters, ctx
-from assets import scenes, config, sessions
+from telebot import handle, events, send
 
 
 @handle(events.start)
 def _():
-    send('Hello')
+    send('Отправь мне картинки')
 
 
-
+@handle(events.photo)
+def _():
+    send('?')

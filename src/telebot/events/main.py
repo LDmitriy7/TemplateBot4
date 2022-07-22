@@ -1,17 +1,17 @@
-class Event:
-    pass
-
+from .base import Event
 
 start = Event()
 
 
-class TextEvent(Event):
+class Text(Event):
 
     def __init__(self, value: str = None):
         self.value = value
 
     def __call__(self, value: str):
-        return TextEvent(value)
+        return Text(value)
 
 
-text = TextEvent()
+text = Text()
+
+photo = Event()
